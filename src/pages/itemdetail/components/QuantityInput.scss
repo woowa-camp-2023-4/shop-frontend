@@ -1,0 +1,27 @@
+.quantity-input {
+  border: 1px solid gray;
+  width: max-content;
+  border-radius: 8px;
+
+  button {
+    border-radius: 8px;
+    width: 36px;
+    height: 36px;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    color: gray;
+  }
+
+  input {
+    height: 36px;
+    width: 36px;
+    border: none;
+    font-size: 12pt;
+    text-align: center;
+  }
+
+  input:focus {
+    outline: none;
+  }
+}

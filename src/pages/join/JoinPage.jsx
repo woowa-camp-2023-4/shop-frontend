@@ -1,9 +1,9 @@
 import "./JoinPage.scss";
-import ColorButton from "../components/ColorButton";
+import {ColorButton} from "@components/buttons";
 import {useLocation} from "react-router-dom";
 import {useEffect} from "react";
 
-const JoinPage = () => {
+export const JoinPage = () => {
     const {pathname} = useLocation();
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -34,5 +34,3 @@ const JoinPage = () => {
         </div>
     )
 };
-
-export default JoinPage;

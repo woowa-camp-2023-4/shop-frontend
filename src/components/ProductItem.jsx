@@ -1,7 +1,7 @@
 import "./ProductItem.scss";
-import {useLocation, useNavigate} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 
-const ItemCard = () => {
+const ItemCard = props => {
     const navigate = useNavigate();
     const onClick = (e) => {
         navigate("/product");

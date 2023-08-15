@@ -1,0 +1,27 @@
+.product-detail-head {
+  padding: 50px 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 60px;
+
+  .product-detail-head-left {
+    padding: 50px;
+    img {
+      width: 500px;
+      box-shadow: 0 10px 10px rgb(0, 0, 0, 0.4);
+    }
+  }
+
+  .product-detail-head-right {
+    hr {
+      border: solid 0.5px lightcyan;
+    }
+    p.delivery-type {
+      color: darkslategrey;
+    }
+
+    .item-detail-container {
+    }
+  }
+}
