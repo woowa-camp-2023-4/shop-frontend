@@ -1,0 +1,111 @@
+.header {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+
+  box-shadow: 0 1px 4px rgb(0, 0, 0, 0.3);
+
+  .header-container {
+    width: 1024px;
+
+    ul.member-menu-list {
+      padding: 10px 0;
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+      margin: 0;
+
+      a {
+        text-decoration: none;
+        color: darkslategrey;
+      }
+
+      a:hover {
+        color: darkolivegreen;
+      }
+    }
+
+    .header-body {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .logo-wrapper {
+        h1 {
+          margin: 0;
+          font-size: 30pt;
+          font-weight: 300;
+          letter-spacing: 6px;
+
+          a {
+            text-decoration: none;
+            color: black;
+          }
+        }
+      }
+
+      .search-wrapper {
+        input.search-input {
+          width: 400px;
+          height: 10px;
+          border-radius: 80px;
+          border: 1px solid darkslategrey;
+          font-size: 12pt;
+          padding: 14px 20px;
+        }
+
+        input.search-input:focus {
+          outline: none;
+        }
+      }
+
+      .icon-menus {
+        ul.menu-icon-list {
+          margin: 0;
+          list-style: none;
+          display: flex;
+          gap: 16px;
+
+          li.menu-icon {
+            font-size: 24pt;
+            font-weight: lighter;
+            color: darkslategrey;
+
+            a {
+              color: darkslategrey;
+            }
+
+            a:hover {
+              color: darkolivegreen;
+            }
+          }
+        }
+      }
+    }
+
+    .header-footer {
+      margin-top: 10px;
+      ul {
+        padding: 16px 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+
+        a {
+          text-decoration: none;
+          color: darkslategrey;
+          font-size: 12pt;
+          font-weight: 600;
+        }
+
+        a:hover {
+          color: darkolivegreen;
+        }
+      }
+    }
+  }
+}

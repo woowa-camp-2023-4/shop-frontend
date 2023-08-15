@@ -1,0 +1,15 @@
+.button-promotion {
+  border: 2px solid white;
+  color: white;
+  width: fit-content;
+  padding: 10px;
+  font-size: 14pt;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.button-promotion:hover {
+  border: 2px solid darkolivegreen;
+  color: darkolivegreen;
+  background-color: white;
+}

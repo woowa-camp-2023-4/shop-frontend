@@ -1,0 +1,44 @@
+.join-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+  padding: 50px 50px;
+  width: 400px;
+
+  .input-group {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+      margin: 0;
+      font-size: 14pt;
+      font-weight: 500;
+      span {
+        color: orangered;
+      }
+    }
+
+    input {
+      width: 260px;
+      padding: 10px 10px;
+      border-radius: 6px;
+      font-size: 12pt;
+      border: 1px solid lightgray;
+    }
+
+    input:focus {
+      outline: none;
+      border: 1px solid darkslategrey;
+    }
+  }
+
+  p.join-message {
+    color: darkslategrey;
+    margin: 0
+  }
+}
