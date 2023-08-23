@@ -1,0 +1,26 @@
+.border-button {
+  padding: 20px;
+  background-color: white;
+  border: 1px solid darkolivegreen;
+  color: darkolivegreen;
+  font-size: 14pt;
+  border-radius: 6px;
+  width: 100%;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.border-button:hover {
+  background-color: #EEEEEE;
+}
+
+.border-button-disabled {
+  padding: 20px;
+  background-color: lightgray;
+  border: 1px solid lightgray;
+  color: white;
+  font-size: 14pt;
+  border-radius: 6px;
+  width: 100%;
+  font-weight: 600;
+}

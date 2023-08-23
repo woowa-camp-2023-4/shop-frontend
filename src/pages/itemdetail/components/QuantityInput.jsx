@@ -8,7 +8,9 @@ export const QuantityInput = props => {
     }
 
     const onQuantityDecrease = () => {
-        setQuantity(prev => prev - 1);
+        if (props.quantity > 0) {
+            setQuantity(prev => prev - 1);
+        }
     }
 
     return (

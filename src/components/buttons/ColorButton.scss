@@ -1,5 +1,5 @@
 .color-button {
-  padding: 24px;
+  padding: 20px;
   background-color: darkolivegreen;
   border: none;
   color: white;
@@ -8,9 +8,19 @@
   width: 100%;
   cursor: pointer;
   font-weight: 600;
-  margin-top: 30px;
 }
 
 .color-button:hover {
   background-color: #50562A;
+}
+
+.color-button-disabled {
+  padding: 20px;
+  background-color: darkgray;
+  border: 1px solid darkgray;
+  color: white;
+  font-size: 14pt;
+  border-radius: 6px;
+  width: 100%;
+  font-weight: 600;
 }

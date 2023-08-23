@@ -1,0 +1,30 @@
+.admin-header {
+  background-color: darkolivegreen;
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+
+  h2 {
+    color: white;
+    margin: 0 0 0 30px;
+    padding: 16px 0;
+  }
+
+  ul {
+    margin: 0;
+
+    list-style: none;
+    display: flex;
+    justify-content: start;
+    gap: 50px;
+
+    li {
+      a {
+        text-decoration: none;
+        color: #EEEEEE;
+        font-weight: 600;
+      }
+    }
+  }
+}

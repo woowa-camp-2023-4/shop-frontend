@@ -1,0 +1,1 @@
+export const BASE_DOMAIN = "http://43.200.7.192:8080";
