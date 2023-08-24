@@ -37,8 +37,8 @@ export const ProductCard = props => {
         <>
             <hr/>
             <div className={"product-card"}>
-                <img src={"/assets/images/item-default.jpeg"} alt={"ss"}/>
-                {/*<img src={props.image} alt={"ss"}/>*/}
+                {/*<img src={"/assets/images/item-default.jpeg"} alt={"ss"}/>*/}
+                <img src={props.image} alt={"ss"}/>
                 <div className={"card-body"}>
                     <p>
                         {props.name}

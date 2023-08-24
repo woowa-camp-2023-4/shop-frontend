@@ -6,7 +6,7 @@ import {BASE_DOMAIN} from "@/api/constant";
 import ItemCard from "@components/ProductItem";
 import {CartItemCard} from "@pages/cart/components/CartItemCard";
 import {ProductCard} from "@/admin/components/ProductCard";
-import {ColorButton} from "@components/buttons";
+import {BorderButton, ColorButton} from "@components/buttons";
 import {useNavigate} from "react-router-dom";
 
 export const AdminProductPage = () => {
@@ -52,6 +52,7 @@ export const AdminProductPage = () => {
                     />
                 ))
             }
+            <BorderButton onClick={update}>새로 고침</BorderButton>
         </div>
     );
 };

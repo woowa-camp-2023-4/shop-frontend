@@ -9,7 +9,7 @@ const ItemCard = props => {
 
     return (
         <div className={"item-card"} onClick={onClick}>
-            <img src={"assets/images/item-default.jpeg"} alt={"상품 이미지가 존재하지 않습니다."}/>
+            <img src={props.image} alt={"상품 이미지가 존재하지 않습니다."}/>
             <p>{props.name}</p>
             <h3>{props.price.toLocaleString()}원</h3>
         </div>

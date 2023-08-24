@@ -2,7 +2,7 @@ import "./Header.scss";
 import {BsCardList, BsCart2, BsJournalText, BsTicketPerforated} from "react-icons/bs";
 import {IoCartOutline, IoClipboardOutline, IoLocationOutline, IoTicketOutline} from "react-icons/io5";
 import {AiOutlineHeart} from "react-icons/ai";
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import {useRecoilState} from "recoil";
 import {LoginState} from "@/states";
 import {CiViewList} from "react-icons/ci";
@@ -11,7 +11,7 @@ import {RiCoupon3Line} from "react-icons/ri";
 
 const Header = () => {
     const [loginState, setLoginState] = useRecoilState(LoginState);
-
+    const navigate = useNavigate();
     const onLogoutClicked = () => {
         localStorage.removeItem("user");
         setLoginState({
@@ -20,6 +20,7 @@ const Header = () => {
             email: "",
             role: "",
         });
+        navigate("/");
     };
 
     return (
@@ -44,7 +45,7 @@ const Header = () => {
 
                 <div className={"header-body"}>
                     <div className={"logo-wrapper"}>
-                        <h1><Link to={"/"}>WoowaKit</Link></h1>
+                        <h1><Link to={"/"}>든 든 킷</Link></h1>
                     </div>
                     <div className={"search-wrapper"}>
                         <input className={"search-input"} placeholder={"검색어를 입력해 주세요"}/>

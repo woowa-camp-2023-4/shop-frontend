@@ -26,7 +26,6 @@ export const OrderPage = () => {
 
     useEffect(() => {
         apiClient.get(BASE_DOMAIN + "/orders/" + id).then(response => {
-            console.log(response.data)
             setOrder(response.data);
             (async () => {
                 const paymentWidget = await loadPaymentWidget(clientKey, ANONYMOUS); // 비회원 결제
@@ -64,7 +63,10 @@ export const OrderPage = () => {
                             }).then(response => {
                                 alert("결제 완료되었습니다.")
                                 navigate("/");
-                            })
+                            }).catch(response => {
+                                alert(response.response.data.message);
+                                navigate("/");
+                            });
                         }).catch(e => {
                             console.log(e);
                         });

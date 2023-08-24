@@ -39,14 +39,14 @@ export const MainPage = () => {
             }}>
                 <h1>오늘의 추천 상품</h1>
                 <div
-                    style={{display: "flex", justifyContent: "start", flexWrap: "wrap", gap: 38, width: "fit-content"}}>
+                    style={{display: "flex", justifyContent: "start", flexWrap: "wrap", gap: 28, width: "fit-content"}}>
                     {
                         products.map(product => (
                             <ItemCard
                                 id={product.id}
                                 name={product.name}
                                 price={product.price}
-                                imageUrl={product.imageUrl}
+                                image={product.imageUrl}
                             />
                         ))
                     }

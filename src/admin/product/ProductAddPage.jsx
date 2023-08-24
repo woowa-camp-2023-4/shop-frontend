@@ -27,7 +27,6 @@ export const ProductAddPage = () => {
         formData.append('data', file);
         apiClient.post("/products/images", formData).then(response => {
             console.log(response);
-        }).then(response => {
             apiClient.post("/products", {
                 name: name,
                 price: price,
@@ -35,7 +34,8 @@ export const ProductAddPage = () => {
             }).then(response2 => {
                 navigate("/admin/product");
             }).catch(response2 => {
-                alert(response2.response.data?.message);
+                console.log(response2);
+                // alert(response2.response.data?.message);
             });
         });
     }

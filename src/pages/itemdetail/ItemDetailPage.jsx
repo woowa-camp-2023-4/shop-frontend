@@ -40,6 +40,8 @@ export const ItemDetailPage = props => {
         }).then(response => {
             // TODO
             navigate("/order/" + response.data.id);
+        }).catch(response => {
+            alert(response.response.data.message);
         });
     }
 
@@ -50,6 +52,8 @@ export const ItemDetailPage = props => {
         }).then(response => {
             alert("장바구니에 담았습니다.");
             navigate("/cart");
+        }).catch(response => {
+            alert(response.response.data.message);
         });
     }
 
@@ -57,7 +61,7 @@ export const ItemDetailPage = props => {
         <div className={"container"}>
             <div className={"product-detail-head"}>
                 <div className={"product-detail-head-left"}>
-                    <img src={"/assets/images/sogalbi.jpeg"} alt={"product"}/>
+                    <img src={product.imageUrl} alt={"product"}/>
                 </div>
                 <div className={"product-detail-head-right"}>
                     <p className={"delivery-type"}>냉장 배송</p>

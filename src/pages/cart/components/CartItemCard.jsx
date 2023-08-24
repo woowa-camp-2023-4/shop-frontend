@@ -7,7 +7,7 @@ export const CartItemCard = props => {
         <>
             <hr/>
             <div className={"cart-item-card"}>
-                <input className={"item-check"} type={"checkbox"}/>
+                <input className={"item-check"} type={"checkbox"} checked={props.checked}/>
                 <img src={props.image} alt={"ss"}/>
                 <div className={"card-body"}>
                     <p>
