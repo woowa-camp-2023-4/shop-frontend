@@ -1,13 +1,18 @@
 import './HistoryPage.scss';
 import {useEffect, useState} from "react";
 import {apiClient} from "@/api/ApiClient";
+import {OrderHistory} from "@pages/history/components/OrderHistory";
+import {useRecoilState} from "recoil";
+import {LoginState} from "@/states";
 
 export const HistoryPage = () => {
     const [orders, setOrders] = useState([]);
+    const [loginState, setLoginState] = useRecoilState(LoginState);
 
     useEffect(() => {
+        if (!loginState.loggedIn) return;
+
         apiClient.get("/orders").then(response => {
-            console.log(response);
             setOrders(response.data);
         });
     }, []);
@@ -18,9 +23,9 @@ export const HistoryPage = () => {
 
             {
                 orders.map(order => (
-                    <div>
-
-                    </div>
+                    <OrderHistory
+                        order={order}
+                    />
                 ))
             }
 

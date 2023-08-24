@@ -62,7 +62,7 @@ export const OrderPage = () => {
                                 paymentKey: response.paymentKey
                             }).then(response => {
                                 alert("결제 완료되었습니다.")
-                                navigate("/");
+                                navigate("/history");
                             }).catch(response => {
                                 alert(response.response.data.message);
                                 navigate("/");
